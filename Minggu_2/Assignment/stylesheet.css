@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Header */
+
+header {
+  padding: 16px 0;
+}
+
+header > .Box {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding: 32px;
+  height: 96px;
+  width: 1200px;
+  border-radius: 20px;
+  background-color: #2a2c2e;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > .Box > div {
+  color: white;
+}
+
+header > .Box > .Left > img {
+  height: 40px;
+  width: 166px;
+}
+
+header > .Box > .Middle > ul {
+  list-style: none;
+  gap: 32px;
+  color: #ffffff60;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+header > .Box > .Middle > ul > li.Highlight {
+  color: #f4d867;
+}
+
+header > .Box > .Right {
+  gap: 32px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+header > .Box > .Right > img {
+  width: 24px;
+  height: 24px;
+}
+
+header > .Box > .Right > button {
+  all: unset;
+  padding: 16px 32px;
+  border-radius: 10px;
+  background-color: #f4d867;
+  color: #2a2c2e;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Navigation */
+
+nav {
+  height: 80px;
+  color: #f4ba30;
+  background-color: #f4d867;
+  gap: 16px;
+  margin-bottom: 28px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > h2 {
+  white-space: nowrap;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+nav > h2.Highlight {
+  color: #2a2c2e;
+}
+
+/* Main content */
+
+main {
+  background-color: #2a2c2e;
+}
+
+main > .Box {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  padding: 32px 0;
+  gap: 8px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main > .Box > .Book {
+  width: 280px;
+  height: 560px;
+  padding: 16px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+main > .Box > .Book > img {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: top;
+}
+
+main > .Box > .Book > .Info {
+  gap: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+main > .Box > .Book > .Info > .Name > p:first-child {
+  font-size: 14px;
+  font-weight: 600px;
+  color: #00000060;
+  margin-bottom: 8px;
+}
+
+main > .Box > .Book > .Info > .Price > span:first-child {
+  font-size: 18px;
+  color: #00000038;
+  text-decoration: line-through;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 20px;
+  color: white;
+  background-color: #ffffff;
+}
+
+footer > .Box {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #2a2e2c;
+}
+
+footer > .Box > .Top {
+  padding: 24px;
+  height: 80px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > .Box > .Bottom {
+  font-size: 10px;
+  padding: 16px;
+  height: 40px;
+
+  background-color: #00000080;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > .Box > .Bottom > .Left > span:first-child {
+  padding-left: 8px;
+  padding-right: 16px;
+}
+
+footer > .Box > .Bottom > .Right > span:last-child {
+  padding-left: 16px;
+  padding-right: 8px;
+}
+
+/* Media Query */
+
+@media (max-width: 650px) {
+  header {
+    padding: 0;
+    padding-bottom: 16px;
+  }
+
+  header > .Box {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    gap: 32px;
+  }
+
+  header > .Box > .Middle > ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav {
+    overflow: hidden;
+  }
+
+  main > .Box {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer > .Box {
+    width: 100%;
+  }
+
+  footer > .Box > .Bottom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  footer > .Box > .Bottom > .Left > span:first-child {
+    padding-left: 0;
+  }
+  footer > .Box > .Bottom > .Right > span:last-child {
+    padding-right: 0;
+  }
+}
