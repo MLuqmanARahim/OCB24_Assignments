@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Header */
+
+header {
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+header > .Container {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 32px;
+  height: 96px;
+  width: 1200px;
+  border-radius: 20px;
+  background-color: #2a2c2e;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+header > .Container > div {
+  color: white;
+}
+
+/* Main Content */
+
+main {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #2a2c2e;
+}
+
+main > .Container {
+  width: 800px;
+  height: auto;
+  padding: 35px;
+}
+
+main > .Container > h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+main > .Container > form > p > .SubCategory:after {
+  content: "";
+  display: inline-block;
+  border-top: 1px solid #000;
+  width: 3em;
+  vertical-align: middle;
+  margin: 0 0.5em;
+}
+
+main > .Container > form {
+  color: #ffffff;
+}
+
+main > .Container > form > p {
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 24px;
+}
+
+main > .Container > form > p:after {
+  content: "";
+  display: inline-block;
+  border-top: 1px solid white;
+  width: 584px;
+  vertical-align: middle;
+  margin-left: 24px;
+}
+
+main > .Container > form > p:first-of-type::after {
+  content: "";
+  display: inline-block;
+  border-top: 1px solid white;
+  width: 616px;
+  vertical-align: middle;
+  margin-left: 24px;
+}
+
+main > .Container > form > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+main > .Container > form > div > input {
+  width: 550px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 40px;
+  padding: 10px;
+}
+
+main > .Container > form > .RadioFormatting {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 105px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+main > .Container > form > div > .Checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+main > .Container > form > .Button {
+  all: unset;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 10px;
+  background-color: #f4d867;
+  color: #2a2c2e;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 24px;
+  color: white;
+  background-color: #ffffff;
+}
+
+footer > .Container {
+  width: 1250px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #2a2e2c;
+}
+
+footer > .Container > .Top {
+  padding: 24px;
+  height: 80px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > .Container > .Bottom {
+  font-size: 10px;
+  padding: 16px;
+  height: 40px;
+
+  background-color: #00000080;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > .Container > .Bottom > .Left > span:first-child {
+  padding-left: 8px;
+  padding-right: 16px;
+}
+
+footer > .Container > .Bottom > .Right > span:last-child {
+  padding-left: 16px;
+  padding-right: 8px;
+}
